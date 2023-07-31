@@ -1201,9 +1201,9 @@
                     <a href="{{route('user.profile', ['id' => Auth::id()])}}"><i class="dripicons-user"></i> {{trans('file.profile')}}</a>
                     </li>
                     @if($general_setting_permission_active)
-                    <li>
+                    {{-- <li>
                     <a href="{{route('setting.general')}}"><i class="dripicons-gear"></i> {{trans('file.settings')}}</a>
-                    </li>
+                    </li> --}}
                     @endif
                     <li>
                     <a href="{{url('my-transactions/'.date('Y').'/'.date('m'))}}"><i class="dripicons-swap"></i> {{trans('file.My Transaction')}}</a>
