@@ -57,7 +57,8 @@ class Helpers
     }
     public static function push_notif($fcm_token, $data)
     {
-        $key = config('app.fcm_key');
+        // $key = config('app.fcm_key');
+        $key = 'disabledkey';
         $url = 'https://fcm.googleapis.com/fcm/send';
 
         $header = [
