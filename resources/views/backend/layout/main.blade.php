@@ -731,7 +731,7 @@
                 {!! Form::open(['route' => 'report.profitLoss', 'method' => 'post', 'id' => 'profitLoss-report-form']) !!}
                 <input type="hidden" name="start_date" value="{{date('Y-m').'-'.'01'}}" />
                 <input type="hidden" name="end_date" value="{{date('Y-m-d')}}" />
-                <a id="profitLoss-link" href="">{{trans('file.Summary Report')}}</a>
+                <a id="profitLoss-link" href="">Neraca Laba Rugi</a>
                 {!! Form::close() !!}
                 </li>
                 @endif
@@ -1002,7 +1002,7 @@
                         ])->first();
                     ?>
                     @if($role->id <= 2)
-                    <li id="role-menu"><a href="{{route('role.index')}}">{{trans('file.Role Permission')}}</a></li>
+                    <li id="role-menu"><a href="{{route('role.index')}}">Izin Akses</a></li>
                     @endif
                     @if($discount_plan_permission_active)
                     <li id="discount-plan-list-menu"><a href="{{route('discount-plans.index')}}">Perencanaan Discount</a></li>
