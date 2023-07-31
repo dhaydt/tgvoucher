@@ -1,0 +1,415 @@
+   | web                                          |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | POST      | setting/hrm_setting_store                                       | setting.hrmStore                  | App\Http\Controllers\SettingController@hrmSettingStore                 | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | setting/mail_setting                                            | setting.mail                      | App\Http\Controllers\SettingController@mailSetting                     | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | POST      | setting/mail_setting_store                                      | setting.mailStore                 | App\Http\Controllers\SettingController@mailSettingStore                | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | setting/pos_setting                                             | setting.pos                       | App\Http\Controllers\SettingController@posSetting                      | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | POST      | setting/pos_setting_store                                       | setting.posStore                  | App\Http\Controllers\SettingController@posSettingStore                 | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | setting/reward-point-setting                                    | setting.rewardPoint               | App\Http\Controllers\SettingController@rewardPointSetting              | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | POST      | setting/reward-point-setting_store                              | setting.rewardPointStore          | App\Http\Controllers\SettingController@rewardPointSettingStore         | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | POST      | setting/sendsms                                                 | setting.sendSms                   | App\Http\Controllers\SettingController@sendSms                         | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | setting/sms_setting                                             | setting.sms                       | App\Http\Controllers\SettingController@smsSetting                      | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | POST      | setting/sms_setting_store                                       | setting.smsStore                  | App\Http\Controllers\SettingController@smsSettingStore                 | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | POST      | stock-count                                                     | stock-count.store                 | App\Http\Controllers\StockCountController@store                        | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | stock-count                                                     | stock-count.index                 | App\Http\Controllers\StockCountController@index                        | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | stock-count/create                                              | stock-count.create                | App\Http\Controllers\StockCountController@create                       | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | POST      | stock-count/finalize                                            | stock-count.finalize              | App\Http\Controllers\StockCountController@finalize                     | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | stock-count/stockdif/{id}                                       |                                   | App\Http\Controllers\StockCountController@stockDif                     | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | stock-count/{id}/qty_adjustment                                 | stock-count.adjustment            | App\Http\Controllers\StockCountController@qtyAdjustment                | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | DELETE    | stock-count/{stock_count}                                       | stock-count.destroy               | App\Http\Controllers\StockCountController@destroy                      | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | PUT|PATCH | stock-count/{stock_count}                                       | stock-count.update                | App\Http\Controllers\StockCountController@update                       | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | stock-count/{stock_count}                                       | stock-count.show                  | App\Http\Controllers\StockCountController@show                         | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | stock-count/{stock_count}/edit                                  | stock-count.edit                  | App\Http\Controllers\StockCountController@edit                         | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | supplier                                                        | supplier.index                    | App\Http\Controllers\SupplierController@index                          | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | POST      | supplier                                                        | supplier.store                    | App\Http\Controllers\SupplierController@store                          | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | supplier/create                                                 | supplier.create                   | App\Http\Controllers\SupplierController@create                         | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | POST      | supplier/deletebyselection                                      |                                   | App\Http\Controllers\SupplierController@deleteBySelection              | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | DELETE    | supplier/{supplier}                                             | supplier.destroy                  | App\Http\Controllers\SupplierController@destroy                        | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | PUT|PATCH | supplier/{supplier}                                             | supplier.update                   | App\Http\Controllers\SupplierController@update                         | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | supplier/{supplier}                                             | supplier.show                     | App\Http\Controllers\SupplierController@show                           | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | supplier/{supplier}/edit                                        | supplier.edit                     | App\Http\Controllers\SupplierController@edit                           | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | POST      | suppliers/clear-due                                             | supplier.clearDue                 | App\Http\Controllers\supplierController@clearDue                       | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | switch-theme/{theme}                                            | switchTheme                       | App\Http\Controllers\HomeController@switchTheme                        | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | tax                                                             | tax.index                         | App\Http\Controllers\TaxController@index                               | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | POST      | tax                                                             | tax.store                         | App\Http\Controllers\TaxController@store                               | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | tax/create                                                      | tax.create                        | App\Http\Controllers\TaxController@create                              | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | POST      | tax/deletebyselection                                           |                                   | App\Http\Controllers\TaxController@deleteBySelection                   | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | tax/lims_tax_search                                             | tax.search                        | App\Http\Controllers\TaxController@limsTaxSearch                       | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | DELETE    | tax/{tax}                                                       | tax.destroy                       | App\Http\Controllers\TaxController@destroy                             | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | tax/{tax}                                                       | tax.show                          | App\Http\Controllers\TaxController@show                                | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | PUT|PATCH | tax/{tax}                                                       | tax.update                        | App\Http\Controllers\TaxController@update                              | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | tax/{tax}/edit                                                  | tax.edit                          | App\Http\Controllers\TaxController@edit                                | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | POST      | transfers                                                       | transfers.store                   | App\Http\Controllers\TransferController@store                          | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | transfers                                                       | transfers.index                   | App\Http\Controllers\TransferController@index                          | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | transfers/create                                                | transfers.create                  | App\Http\Controllers\TransferController@create                         | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | POST      | transfers/deletebyselection                                     |                                   | App\Http\Controllers\TransferController@deleteBySelection              | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | transfers/getproduct/{id}                                       | transfer.getproduct               | App\Http\Controllers\TransferController@getProduct                     | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | transfers/lims_product_search                                   | product_transfer.search           | App\Http\Controllers\TransferController@limsProductSearch              | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | transfers/product_transfer/{id}                                 |                                   | App\Http\Controllers\TransferController@productTransferData            | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | POST      | transfers/transfer-data                                         | transfers.data                    | App\Http\Controllers\TransferController@transferData                   | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | transfers/transfer_by_csv                                       |                                   | App\Http\Controllers\TransferController@transferByCsv                  | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | transfers/{transfer}                                            | transfers.show                    | App\Http\Controllers\TransferController@show                           | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | PUT|PATCH | transfers/{transfer}                                            | transfers.update                  | App\Http\Controllers\TransferController@update                         | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | DELETE    | transfers/{transfer}                                            | transfers.destroy                 | App\Http\Controllers\TransferController@destroy                        | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | transfers/{transfer}/edit                                       | transfers.edit                    | App\Http\Controllers\TransferController@edit                           | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | POST      | unit                                                            | unit.store                        | App\Http\Controllers\UnitController@store                              | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | unit                                                            | unit.index                        | App\Http\Controllers\UnitController@index                              | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | unit/create                                                     | unit.create                       | App\Http\Controllers\UnitController@create                             | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | POST      | unit/deletebyselection                                          |                                   | App\Http\Controllers\UnitController@deleteBySelection                  | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | unit/lims_unit_search                                           | unit.search                       | App\Http\Controllers\UnitController@limsUnitSearch                     | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | unit/{unit}                                                     | unit.show                         | App\Http\Controllers\UnitController@show                               | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | DELETE    | unit/{unit}                                                     | unit.destroy                      | App\Http\Controllers\UnitController@destroy                            | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | PUT|PATCH | unit/{unit}                                                     | unit.update                       | App\Http\Controllers\UnitController@update                             | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | unit/{unit}/edit                                                | unit.edit                         | App\Http\Controllers\UnitController@edit                               | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | POST      | user                                                            | user.store                        | App\Http\Controllers\UserController@store                              | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | user                                                            | user.index                        | App\Http\Controllers\UserController@index                              | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | PUT       | user/changepass/{id}                                            | user.password                     | App\Http\Controllers\UserController@changePassword                     | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | user/create                                                     | user.create                       | App\Http\Controllers\UserController@create                             | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | POST      | user/deletebyselection                                          |                                   | App\Http\Controllers\UserController@deleteBySelection                  | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | user/genpass                                                    |                                   | App\Http\Controllers\UserController@generatePassword                   | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | user/profile/{id}                                               | user.profile                      | App\Http\Controllers\UserController@profile                            | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | PUT       | user/update_profile/{id}                                        | user.profileUpdate                | App\Http\Controllers\UserController@profileUpdate                      | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | DELETE    | user/{user}                                                     | user.destroy                      | App\Http\Controllers\UserController@destroy                            | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | PUT|PATCH | user/{user}                                                     | user.update                       | App\Http\Controllers\UserController@update                             | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | user/{user}                                                     | user.show                         | App\Http\Controllers\UserController@show                               | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | user/{user}/edit                                                | user.edit                         | App\Http\Controllers\UserController@edit                               | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | POST      | warehouse                                                       | warehouse.store                   | App\Http\Controllers\WarehouseController@store                         | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | warehouse                                                       | warehouse.index                   | App\Http\Controllers\WarehouseController@index                         | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | warehouse/create                                                | warehouse.create                  | App\Http\Controllers\WarehouseController@create                        | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | POST      | warehouse/deletebyselection                                     |                                   | App\Http\Controllers\WarehouseController@deleteBySelection             | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | warehouse/lims_warehouse_search                                 | warehouse.search                  | App\Http\Controllers\WarehouseController@limsWarehouseSearch           | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | warehouse/{warehouse}                                           | warehouse.show                    | App\Http\Controllers\WarehouseController@show                          | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | PUT|PATCH | warehouse/{warehouse}                                           | warehouse.update                  | App\Http\Controllers\WarehouseController@update                        | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | DELETE    | warehouse/{warehouse}                                           | warehouse.destroy                 | App\Http\Controllers\WarehouseController@destroy                       | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
+|        | GET|HEAD  | warehouse/{warehouse}/edit                                      | warehouse.edit                    | App\Http\Controllers\WarehouseController@edit                          | web
+                               |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Common                   |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Authenticate             |
+|        |           |                                                                 |                                   |                                                                        | App\Http\Middleware\Active                   |
++--------+-----------+-----------------------------------------------------------------+-----------------------------------+------------------------------------------------------------------------+----------------------------------------------+
