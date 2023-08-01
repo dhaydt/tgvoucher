@@ -133,7 +133,7 @@ return [
 	"Or" => "Atau",
 	"Sent" => "Terkirim",
 	"Net Profit" => "Keuntungan bersih",
-	"Best Seller" => "Penjual Terbaik",
+	"Best Seller" => "Produk Terbaik",
 	"Best Seller From" => "Penjual Terbaik Dari",
 	"Product Report" => "Laporan Produk",
 	"Purchased" => "Dibeli",
