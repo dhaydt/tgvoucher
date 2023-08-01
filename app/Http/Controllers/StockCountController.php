@@ -112,7 +112,9 @@ class StockCountController extends Controller
                 $product[] = $current_line[0].' ['.$current_line[1].']';
                 $expected[] = $current_line[3];
                 $product_data = Product::where('code', $current_line[1])->first();
-                
+                if(!$product_data){
+                    return ['status' => 'error'];
+                }
                 if($current_line[4]){
                     $difference[] = $temp_dif = $current_line[4] - $current_line[3];
                     $counted[] = $current_line[4];

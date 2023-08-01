@@ -266,6 +266,10 @@
             htmltext += '<br><strong>{{trans("file.Brand")}}: </strong>'+stock_count[5];
         htmltext += '<br><span class="d-print-none mt-1"><strong>{{trans("file.Files")}}: </strong>&nbsp;&nbsp;<a href="'+stock_count[6]+'" class="btn btn-sm btn-primary"><i class="dripicons-download"></i> {{trans("file.Initial File")}}</a>&nbsp;&nbsp;<a href="'+stock_count[7]+'" class="btn btn-sm btn-info"><i class="dripicons-download"></i> {{trans("file.Final File")}}</a></span>';
         $.get('stock-count/stockdif/' + stock_count[8], function(data){
+            if(data.status == 'error'){
+                alert('Product code tidak ditemukan');
+                // window.location = '/stock-count';
+            }
             $(".stockdif-list tbody").remove();
             var name_code = data[0];
             var expected = data[1];
