@@ -39,17 +39,42 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="{{ asset('asset_login/css/style.css') }}">
+  <style>
+    @media(max-width: 500px){
+      .row-card{
+        padding-top: 13px;
+      }
+      .ftco-section{
+        padding-top: 5px !important;
+      }
+      h2.heading-section{
+        font-size: 18px;
+      }
+      .pb-minus{
+        margin-bottom: 10px !important;
+      }
+      h3{
+        font-size: 20px !important;
+      }
+      .form-group .label{
+        font-size: 10px;
+      }
+      .login-wrap.p-4.p-md-5{
+        padding:15px 20px !important;
+      }
+    }
+  </style>
 </head>
 
 <body style="max-width: 100vw; overflow: hidden;">
   <section class="ftco-section">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-6 text-center mb-5">
+      <div class="row justify-content-center d-none d-md-block">
+        <div class="col-md-6 text-center mb-5 pb-minus">
           <h2 class="heading-section">{{$general_setting->site_title ?? 'Invalid Web Name'}}</h2>
         </div>
       </div>
-      <div class="row justify-content-center">
+      <div class="row justify-content-center row-card">
         <div class="col-md-12 col-lg-10">
           <div class="wrap d-md-flex">
             <div class="img" style="background-image: url({{ asset('asset_login/images/bg-1.jpg') }});">
@@ -91,7 +116,7 @@
                   </p>
                   @endif
                 </div>
-                <div class="form-group">
+                <div class="form-group position-relative" style="z-index:100;">
                   <button type="submit" class="form-control btn btn-primary rounded submit px-3">LOGIN</button>
                 </div>
               </form>
