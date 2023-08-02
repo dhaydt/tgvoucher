@@ -69,11 +69,11 @@
 <body style="max-width: 100vw; overflow: hidden;">
   <section class="ftco-section">
     <div class="container">
-      <div class="row justify-content-center d-none d-md-block">
+      {{-- <div class="row justify-content-center d-none d-md-block">
         <div class="col-md-6 text-center mb-5 pb-minus">
           <h2 class="heading-section">{{$general_setting->site_title ?? 'Invalid Web Name'}}</h2>
         </div>
-      </div>
+      </div> --}}
       <div class="row justify-content-center row-card">
         <div class="col-md-12 col-lg-10">
           <div class="wrap d-md-flex">
