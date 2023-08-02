@@ -111,8 +111,9 @@ class StockCountController extends Controller
             if( $current_line && $i > 0 && ($current_line[3] != $current_line[4]) ){
                 $product[] = $current_line[0].' ['.$current_line[1].']';
                 $expected[] = $current_line[3];
-                $product_data = Product::where('code', $current_line[1])->first();
+                $product_data = Product::where('code', 'like', '%'.$current_line[1].'%')->first();
                 if(!$product_data){
+                    // dd($i, $current_line[1]);
                     return ['status' => 'error'];
                 }
                 if($current_line[4]){
