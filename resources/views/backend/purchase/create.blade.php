@@ -271,6 +271,11 @@
 @push('scripts')
 <script type="text/javascript">
 
+    $(document).ready(function(){
+        $(document).on('submit', 'form', function() {
+            $('#submit-btn').attr('disabled', 'disabled');
+        });
+    })
     $("ul#purchase").siblings('a').attr('aria-expanded','true');
     $("ul#purchase").addClass("show");
     $("ul#purchase #purchase-create-menu").addClass("active");
